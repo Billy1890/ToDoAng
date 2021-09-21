@@ -1,0 +1,7 @@
+<h1>ToDo List</h1>
+<input #todoInput type="text" placeholder="Add ToDo">
+<button #todoInput (click)="addNewTodo (todoInput)">Add</button>
+<ul>
+  <li *ngFor="let todo of todos">{{todo.id} - {todo.title}}</li>
+  <li *ngFor="let todo of newTodo">{{newTodo}}</li>
+</ul>
